@@ -13,7 +13,7 @@ for x1 in range(n):
                 negative_found = False
                 for i in range(x1, x2 + 1):
                     for j in range(y1, y2 + 1):
-                        if grid[i][j] < 0:
+                        if grid[i][j] <= 0:
                             negative_found = True
                             break
                     if negative_found:
