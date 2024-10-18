@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 grid = [list(map(int, input().split())) for _ in range(n)]
 
-max_total_size = 0
+max_total_size = -1
 negative_found = False
 for x1 in range(n):
     for y1 in range(m):
@@ -22,5 +22,5 @@ for x1 in range(n):
                 if not negative_found:
                     size = (x2 - x1 + 1) * (y2 - y1 + 1)
                     max_total_size = max(max_total_size, size)
-                    
+
 print(max_total_size)
