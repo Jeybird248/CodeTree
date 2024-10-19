@@ -5,9 +5,9 @@ arr = list(map(int, input().split()))
 d = {}
 count = 0
 
-for i in arr:
-    if k - i in d:
-        count += 1
-    d[i] = k - i
+for num in arr:
+    complement = k - num
+    count += d.get(complement, 0)
+    d[num] = d.get(num, 0) + 1
 
 print(count)
