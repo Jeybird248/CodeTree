@@ -10,4 +10,4 @@ for _ in range(n):
         d[color] = 1
 
 for k in d.keys():
-    print(f"{k} {d[k]/sum(d.values()) * 100}")
+    print(f"{k} {d[k]/sum(d.values()) * 100:.4f}")
