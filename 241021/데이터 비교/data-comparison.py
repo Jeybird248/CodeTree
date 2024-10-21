@@ -1,8 +1,8 @@
 n = int(input())
-arr1 = list(map(int, input().split()))
+arr1 = input().split()
 
 m = int(input())
-arr2 = list(map(int, input().split()))
+arr2 = input().split()
 
 for num in arr2:
     if num in set(arr1):
