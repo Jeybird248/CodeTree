@@ -19,3 +19,4 @@ for _ in range(T):
         print(s[-1], s[0])
     else:
         print("EMPTY")
+    s.clear()
